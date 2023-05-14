@@ -74,9 +74,10 @@ console.log('8. Total supplies available is:', totalParts);
 console.log('9. Filling boxes with a "while" loop');
 
 totalParts = 572 ;
-boxes = 0;
-while(totalParts > 0){
-    totalParts -= 7;
+let boxCapacity = 7;
+let boxes = 0;
+while(totalParts >= boxCapacity){
+    totalParts -= boxCapacity;
     boxes ++;
 }
 console.log('Total boxes are:', boxes);
